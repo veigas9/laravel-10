@@ -15,6 +15,10 @@ class Support extends Model
 {
     use HasFactory, HasUuids;
 
+    /**
+     * Define colunas a serem preenchidas quando passar um array a ser cadastrado, visando a segurança da aplicação
+     *
+     */
     protected $fillable = [
         'subject',
         'body',
